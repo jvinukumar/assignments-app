@@ -1,0 +1,34 @@
+<!-- <div *ngIf=" this.showTable" style="margin-top: 10px" > -->
+
+    <!-- `<app-student-form  (newStudentAdded)="addStudent($event)"></app-student-form> -->
+    <div class="container">
+      
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First name</th>
+          <th scope="col">Middle name</th>
+          <th scope="col">Last name</th>
+          <th scope="col">student id </th>
+          <th scope="col">Course </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let person of studentsArray; index as i; ">
+          <th scope="row">{{i+1}}</th>
+          <td>{{person.fname}}</td>
+          <td>{{person.mname}}</td>
+          <td>{{person.lname}}</td>
+          <td>{{person.studentID}}</td>
+          <td>{{person.Studentenum}}</td>
+          <td><button type="button" (click)="onEdit(i)" class="btn btn-primary">Edit</button></td>
+          <td><button type="button" (click)="onDelete(i)" class="btn btn-primary">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  
+   </div> `
+
+  

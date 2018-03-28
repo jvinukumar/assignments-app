@@ -1,0 +1,69 @@
+<div class="container">
+    <form >
+        <div class="form-group">
+            <label for="fname">Enter your first name</label>
+            <input type="text" class="form-control" [(ngModel)]="people.fname" name="fname" value="" id="fname" placeholder="Enter first name">
+        </div>
+
+        <div class="form-group">
+            <label for="mname">Enter your middle name </label>
+            <input type="text" class="form-control" [(ngModel)]="people.mname" value="people.mname" name="mname" id="mname" placeholder="Enter middle name">
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Enter last name</label>
+            <input type="text" class="form-control" [(ngModel)]="people.lname" value="people.lname" name="lname" id="lname" placeholder="Enter last name">
+        </div>
+
+        <div class="form-group">
+            <label for="studentID">Enter Student ID</label>
+            <input type="text" class="form-control" [(ngModel)]="people.studentID" value="people.studentID"  name="studentID" id="studentId" placeholder="Enter your ID number ">
+        </div>
+
+        <div class="form-group">
+            <label for="Studentenum">Studentenum</label>
+            <select class="form-control" id="Studentenum" value="people.Studentenum"  name="Studentenum" [(ngModel)]="people.Studentenum">
+                <option>MIS</option>
+                <option>CS</option>
+                <option>EM</option>
+                <option>SWEN</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" (click)="onSubmit()" type="submit">submit data</button>
+    </form>
+</div>
+
+<!-- <div class="container">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="fname">Enter your first name</label>
+            <input type="text" class="form-control" ngModel required name="people.fname" id="fname" placeholder="Enter first name">
+        </div>
+
+        <div class="form-group">
+            <label for="mname">Enter your middle name </label>
+            <input type="text" class="form-control" ngModel required name="people.mname" id="mname" placeholder="Enter middle name">
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Enter last name</label>
+            <input type="text" class="form-control" ngModel required name="people.lname" id="lname" placeholder="Enter last name">
+        </div>
+
+        <div class="form-group">
+            <label for="studentID">Enter Student ID</label>
+            <input type="text" class="form-control" ngModel required name="people.studentID" id="studentId" placeholder="Enter your ID number ">
+        </div>
+
+        <div class="form-group">
+            <label for="Studentenum">Studentenum</label>
+            <select class="form-control" id="Studentenum" name="people.Studentenum" ngModel required >
+                <option>MIS</option>
+                <option>CS</option>
+                <option>EM</option>
+                <option>SWEN</option>
+            </select>
+        </div>
+        <button class="btn btn-primary"  type="submit">submit data</button>
+    </form>
+</div> -->
